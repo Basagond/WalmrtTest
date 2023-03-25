@@ -16,14 +16,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LXk-nA-TDQ">
-                                <rect key="frame" x="16" y="245.66666666666663" width="361" height="361"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LXk-nA-TDQ" customClass="LazyImageView" customModule="WalmartTest" customModuleProvider="target">
+                                <rect key="frame" x="16" y="347.66666666666674" width="361" height="361"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="LXk-nA-TDQ" secondAttribute="height" id="Ujx-ud-L4B"/>
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Juv-OW-LqU">
-                                <rect key="frame" x="16" y="136.66666666666666" width="361" height="93"/>
+                                <rect key="frame" x="16" y="78.999999999999986" width="361" height="252.66666666666663"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eO4-KO-1p1">
                                         <rect key="frame" x="0.0" y="0.0" width="361" height="20.333333333333332"/>
@@ -32,35 +32,41 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="alB-aq-Jkb">
-                                        <rect key="frame" x="0.0" y="36.333333333333343" width="361" height="20.333333333333329"/>
+                                        <rect key="frame" x="0.0" y="36.333333333333329" width="361" height="20.333333333333329"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.44705882349999998" blue="0.80784313730000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DVo-jn-kJT">
-                                        <rect key="frame" x="0.0" y="72.666666666666686" width="361" height="20.333333333333329"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Puq-u7-wMH">
+                                        <rect key="frame" x="0.0" y="72.666666666666657" width="361" height="180"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="180" id="Ax0-vj-f34"/>
+                                        </constraints>
+                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES" calendarEvent="YES" flightNumber="YES"/>
+                                    </textView>
                                 </subviews>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Juv-OW-LqU" secondAttribute="trailing" constant="16" id="1ev-lT-oBf"/>
                             <constraint firstItem="LXk-nA-TDQ" firstAttribute="top" secondItem="Juv-OW-LqU" secondAttribute="bottom" constant="16" id="BGk-gS-wmk"/>
                             <constraint firstItem="Juv-OW-LqU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="G2D-94-zyT"/>
+                            <constraint firstItem="Juv-OW-LqU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="G5c-4J-nzE"/>
                             <constraint firstItem="LXk-nA-TDQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="T20-6x-SJ1"/>
-                            <constraint firstItem="LXk-nA-TDQ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="eIL-vo-BVW"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LXk-nA-TDQ" secondAttribute="trailing" constant="16" id="lxT-86-Gl2"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="descriptionLabel" destination="DVo-jn-kJT" id="TRx-WE-TYb"/>
                         <outlet property="errorLabel" destination="eO4-KO-1p1" id="Dsj-2b-2Yp"/>
-                        <outlet property="imageView" destination="LXk-nA-TDQ" id="lUM-EF-3q6"/>
+                        <outlet property="explanation" destination="Puq-u7-wMH" id="fh9-8p-sUw"/>
+                        <outlet property="imageView" destination="LXk-nA-TDQ" id="E5Q-aZ-yX5"/>
                         <outlet property="titleLable" destination="alB-aq-Jkb" id="Iq6-rr-G1U"/>
                     </connections>
                 </viewController>
@@ -70,6 +76,9 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
