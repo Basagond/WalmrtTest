@@ -8,7 +8,7 @@
 import Foundation
 
 protocol ListServiveDelegates {
-    func localImageLoaded()
+    func localImageLoaded(error:String?)
     func serverDataSucces()
     func errorAccored(error:String)
 }
@@ -50,10 +50,14 @@ class ViewModel {
         if let cachedImage = LocalFileManager.sharedInstance.readFromFile(), cachedImage.date == getTodayFormattedDate {
             debugPrint("image loaded from cache")
             dataModel = cachedImage
-            delegate.localImageLoaded()
+            delegate.localImageLoaded(error: nil)
         } else {
-            LocalFileManager.sharedInstance.deleteTheOldFile()
-            getImageFromServer()
+            if InternetConnectionManager.isConnectedToNetwork() {
+                LocalFileManager.sharedInstance.deleteTheOldFile()
+                getImageFromServer()
+            } else {
+                delegate.localImageLoaded(error: "We are not connected to the internet, showing you the last image we have.")
+            }
         }
     }
     

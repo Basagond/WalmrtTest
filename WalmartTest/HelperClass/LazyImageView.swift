@@ -10,7 +10,7 @@ import UIKit
 
 class LazyImageView: UIImageView {
         
-    func loadImage(from model:PlanetaryDomainModel) {
+    func loadImage(from model:PlanetaryDomainModel, complitionHandler: @escaping () -> Void) {
         DispatchQueue.global().async { [weak self] in
             if let url = URL(string: model.url), let imageData = try? Data(contentsOf: url) {
                 debugPrint("image downloaded from server...")
@@ -19,6 +19,7 @@ class LazyImageView: UIImageView {
                     DispatchQueue.main.async {
                         LocalFileManager.sharedInstance.saveImageToFile(with: model)
                         self?.image = image
+                        complitionHandler()
                     }
                 }
             }

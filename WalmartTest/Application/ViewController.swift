@@ -24,6 +24,7 @@ class ViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        showLoader()
         viewModel.loadImage()
     }
 
@@ -55,8 +56,16 @@ class ViewController: UIViewController {
 
 
 extension ViewController: ListServiveDelegates {
-    func localImageLoaded() {
+    
+    func localImageLoaded(error: String?) {
+        removeLoader()
         DispatchQueue.main.async {
+            if let err = error {
+                self.errorLabel.isHidden = false
+                self.errorLabel.text = err
+            } else {
+                self.errorLabel.isHidden = true
+            }
             self.titleLable.text = self.viewModel.title
             self.explanation.text = self.viewModel.explanation
             if let data = self.viewModel.imageData {
@@ -66,7 +75,6 @@ extension ViewController: ListServiveDelegates {
     }
     
     func serverDataSucces() {
-        removeLoader()
         displayData()
     }
     
@@ -75,7 +83,9 @@ extension ViewController: ListServiveDelegates {
             self.titleLable.text = self.viewModel.title
             self.explanation.text = self.viewModel.explanation
             if let model = self.viewModel.dataModel {
-                self.imageView?.loadImage(from: model)
+                self.imageView?.loadImage(from: model) {
+                    self.removeLoader()
+                }
             }
         }
     }

@@ -26,6 +26,7 @@
 		6BEE162B29CF33CD00D18659 /* PlanetaryUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEE162A29CF33CD00D18659 /* PlanetaryUseCase.swift */; };
 		6BEE163029CF33FB00D18659 /* PlanetaryDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEE162F29CF33FB00D18659 /* PlanetaryDataModel.swift */; };
 		6BEE163229CF340D00D18659 /* PlanetaryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEE163129CF340D00D18659 /* PlanetaryRepository.swift */; };
+		6BEE163429CF3CED00D18659 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEE163329CF3CED00D18659 /* Reachability.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		6BEE162A29CF33CD00D18659 /* PlanetaryUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetaryUseCase.swift; sourceTree = "<group>"; };
 		6BEE162F29CF33FB00D18659 /* PlanetaryDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetaryDataModel.swift; sourceTree = "<group>"; };
 		6BEE163129CF340D00D18659 /* PlanetaryRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetaryRepository.swift; sourceTree = "<group>"; };
+		6BEE163329CF3CED00D18659 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,6 +195,7 @@
 			children = (
 				6BEE162429CF332500D18659 /* LocalFileManager.swift */,
 				6BEE162629CF335500D18659 /* LazyImageView.swift */,
+				6BEE163329CF3CED00D18659 /* Reachability.swift */,
 			);
 			path = HelperClass;
 			sourceTree = "<group>";
@@ -328,6 +331,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BEE163429CF3CED00D18659 /* Reachability.swift in Sources */,
 				6BEE162229CF330100D18659 /* PlanetaryService.swift in Sources */,
 				6BEE15EC29CF2AB900D18659 /* ViewController.swift in Sources */,
 				6BEE162B29CF33CD00D18659 /* PlanetaryUseCase.swift in Sources */,
