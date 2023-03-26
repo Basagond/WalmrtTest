@@ -16,6 +16,20 @@
 		6BEE15FF29CF2ABB00D18659 /* WalmartTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEE15FE29CF2ABB00D18659 /* WalmartTestTests.swift */; };
 		6BEE160929CF2ABC00D18659 /* WalmartTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEE160829CF2ABC00D18659 /* WalmartTestUITests.swift */; };
 		6BEE160B29CF2ABC00D18659 /* WalmartTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEE160A29CF2ABC00D18659 /* WalmartTestUITestsLaunchTests.swift */; };
+		6BEE161C29CF326900D18659 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEE161B29CF326900D18659 /* ViewModel.swift */; };
+		6BEE161E29CF32C200D18659 /* APIClinet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEE161D29CF32C200D18659 /* APIClinet.swift */; };
+		6BEE162029CF32D400D18659 /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEE161F29CF32D400D18659 /* BaseService.swift */; };
+		6BEE162229CF330100D18659 /* PlanetaryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEE162129CF330100D18659 /* PlanetaryService.swift */; };
+		6BEE162529CF332500D18659 /* LocalFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEE162429CF332500D18659 /* LocalFileManager.swift */; };
+		6BEE162929CF337B00D18659 /* PlanetaryDomainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEE162829CF337B00D18659 /* PlanetaryDomainModel.swift */; };
+		6BEE162B29CF33CD00D18659 /* PlanetaryUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEE162A29CF33CD00D18659 /* PlanetaryUseCase.swift */; };
+		6BEE163029CF33FB00D18659 /* PlanetaryDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEE162F29CF33FB00D18659 /* PlanetaryDataModel.swift */; };
+		6BEE163229CF340D00D18659 /* PlanetaryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEE163129CF340D00D18659 /* PlanetaryRepository.swift */; };
+		6BEE163429CF3CED00D18659 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEE163329CF3CED00D18659 /* Reachability.swift */; };
+		6BEE163629CF45B700D18659 /* ViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEE163529CF45B700D18659 /* ViewModelTest.swift */; };
+		6BEE163A29CF4DFF00D18659 /* PlanetaryMockService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEE163929CF4DFF00D18659 /* PlanetaryMockService.swift */; };
+		6BEE163E29CF4EC300D18659 /* PlanetaryStubGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEE163D29CF4EC200D18659 /* PlanetaryStubGenerator.swift */; };
+		6BEE164029D00BBE00D18659 /* MockLocalFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEE163F29D00BBE00D18659 /* MockLocalFileManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +63,20 @@
 		6BEE160429CF2ABC00D18659 /* WalmartTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WalmartTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BEE160829CF2ABC00D18659 /* WalmartTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalmartTestUITests.swift; sourceTree = "<group>"; };
 		6BEE160A29CF2ABC00D18659 /* WalmartTestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalmartTestUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6BEE161B29CF326900D18659 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		6BEE161D29CF32C200D18659 /* APIClinet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClinet.swift; sourceTree = "<group>"; };
+		6BEE161F29CF32D400D18659 /* BaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
+		6BEE162129CF330100D18659 /* PlanetaryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetaryService.swift; sourceTree = "<group>"; };
+		6BEE162429CF332500D18659 /* LocalFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFileManager.swift; sourceTree = "<group>"; };
+		6BEE162829CF337B00D18659 /* PlanetaryDomainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetaryDomainModel.swift; sourceTree = "<group>"; };
+		6BEE162A29CF33CD00D18659 /* PlanetaryUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetaryUseCase.swift; sourceTree = "<group>"; };
+		6BEE162F29CF33FB00D18659 /* PlanetaryDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetaryDataModel.swift; sourceTree = "<group>"; };
+		6BEE163129CF340D00D18659 /* PlanetaryRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetaryRepository.swift; sourceTree = "<group>"; };
+		6BEE163329CF3CED00D18659 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		6BEE163529CF45B700D18659 /* ViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelTest.swift; sourceTree = "<group>"; };
+		6BEE163929CF4DFF00D18659 /* PlanetaryMockService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetaryMockService.swift; sourceTree = "<group>"; };
+		6BEE163D29CF4EC200D18659 /* PlanetaryStubGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetaryStubGenerator.swift; sourceTree = "<group>"; };
+		6BEE163F29D00BBE00D18659 /* MockLocalFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockLocalFileManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +127,13 @@
 		6BEE15E629CF2AB900D18659 /* WalmartTest */ = {
 			isa = PBXGroup;
 			children = (
+				6BEE162329CF331800D18659 /* HelperClass */,
+				6BEE161729CF323A00D18659 /* Services */,
+				6BEE161A29CF325900D18659 /* Application */,
+				6BEE161929CF325000D18659 /* Domain */,
+				6BEE161829CF324700D18659 /* Data */,
 				6BEE15E729CF2AB900D18659 /* AppDelegate.swift */,
 				6BEE15E929CF2AB900D18659 /* SceneDelegate.swift */,
-				6BEE15EB29CF2AB900D18659 /* ViewController.swift */,
 				6BEE15ED29CF2AB900D18659 /* Main.storyboard */,
 				6BEE15F029CF2ABB00D18659 /* Assets.xcassets */,
 				6BEE15F229CF2ABB00D18659 /* LaunchScreen.storyboard */,
@@ -114,6 +146,10 @@
 			isa = PBXGroup;
 			children = (
 				6BEE15FE29CF2ABB00D18659 /* WalmartTestTests.swift */,
+				6BEE163529CF45B700D18659 /* ViewModelTest.swift */,
+				6BEE163929CF4DFF00D18659 /* PlanetaryMockService.swift */,
+				6BEE163F29D00BBE00D18659 /* MockLocalFileManager.swift */,
+				6BEE163D29CF4EC200D18659 /* PlanetaryStubGenerator.swift */,
 			);
 			path = WalmartTestTests;
 			sourceTree = "<group>";
@@ -125,6 +161,52 @@
 				6BEE160A29CF2ABC00D18659 /* WalmartTestUITestsLaunchTests.swift */,
 			);
 			path = WalmartTestUITests;
+			sourceTree = "<group>";
+		};
+		6BEE161729CF323A00D18659 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				6BEE161D29CF32C200D18659 /* APIClinet.swift */,
+				6BEE161F29CF32D400D18659 /* BaseService.swift */,
+				6BEE162129CF330100D18659 /* PlanetaryService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		6BEE161829CF324700D18659 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				6BEE162F29CF33FB00D18659 /* PlanetaryDataModel.swift */,
+				6BEE163129CF340D00D18659 /* PlanetaryRepository.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		6BEE161929CF325000D18659 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				6BEE162829CF337B00D18659 /* PlanetaryDomainModel.swift */,
+				6BEE162A29CF33CD00D18659 /* PlanetaryUseCase.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		6BEE161A29CF325900D18659 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				6BEE15EB29CF2AB900D18659 /* ViewController.swift */,
+				6BEE161B29CF326900D18659 /* ViewModel.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		6BEE162329CF331800D18659 /* HelperClass */ = {
+			isa = PBXGroup;
+			children = (
+				6BEE162429CF332500D18659 /* LocalFileManager.swift */,
+				6BEE163329CF3CED00D18659 /* Reachability.swift */,
+			);
+			path = HelperClass;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +340,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BEE163429CF3CED00D18659 /* Reachability.swift in Sources */,
+				6BEE162229CF330100D18659 /* PlanetaryService.swift in Sources */,
 				6BEE15EC29CF2AB900D18659 /* ViewController.swift in Sources */,
+				6BEE162B29CF33CD00D18659 /* PlanetaryUseCase.swift in Sources */,
 				6BEE15E829CF2AB900D18659 /* AppDelegate.swift in Sources */,
+				6BEE161C29CF326900D18659 /* ViewModel.swift in Sources */,
+				6BEE162029CF32D400D18659 /* BaseService.swift in Sources */,
+				6BEE161E29CF32C200D18659 /* APIClinet.swift in Sources */,
+				6BEE163229CF340D00D18659 /* PlanetaryRepository.swift in Sources */,
+				6BEE162929CF337B00D18659 /* PlanetaryDomainModel.swift in Sources */,
+				6BEE163029CF33FB00D18659 /* PlanetaryDataModel.swift in Sources */,
 				6BEE15EA29CF2AB900D18659 /* SceneDelegate.swift in Sources */,
+				6BEE162529CF332500D18659 /* LocalFileManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,6 +360,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BEE163E29CF4EC300D18659 /* PlanetaryStubGenerator.swift in Sources */,
+				6BEE164029D00BBE00D18659 /* MockLocalFileManager.swift in Sources */,
+				6BEE163A29CF4DFF00D18659 /* PlanetaryMockService.swift in Sources */,
+				6BEE163629CF45B700D18659 /* ViewModelTest.swift in Sources */,
 				6BEE15FF29CF2ABB00D18659 /* WalmartTestTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

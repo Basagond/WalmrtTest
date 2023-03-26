@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "3E7B55CB-B4E6-409E-8883-32403D541F5D"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "186E80B6-1D33-4913-93CC-895D3457A64B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WalmartTest/Application/ViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+            landmarkName = "loadImage()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2663FFFB-042E-4AC7-AF56-A81C0ABFF3C5"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WalmartTest/HelperClass/LazyImageView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "LazyImageView"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F96C36DF-92F6-440A-9079-B8E1EF590BE1"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WalmartTest/HelperClass/LazyImageView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "LazyImageView"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "F96C36DF-92F6-440A-9079-B8E1EF590BE1 - 4e93c572aeee1d8b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in WalmartTest.LazyImageView.loadImage(from: WalmartTest.PlanetaryDomainModel, complitionHandler: () -&gt; ()) -&gt; ()"
+                  moduleName = "WalmartTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/basagondmugganavar/Documents/Interview%20/Tests/WalmartTest/WalmartTest/HelperClass/LazyImageView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "420">
+               </Location>
+               <Location
+                  uuid = "F96C36DF-92F6-440A-9079-B8E1EF590BE1 - 4e93c572aeee1d8b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in WalmartTest.LazyImageView.loadImage(from: WalmartTest.PlanetaryDomainModel, complitionHandler: () -&gt; ()) -&gt; ()"
+                  moduleName = "WalmartTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/basagondmugganavar/Documents/Interview%20/Tests/WalmartTest/WalmartTest/HelperClass/LazyImageView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "740">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C8286D55-8F47-4909-B1B0-73A429EC5B59"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WalmartTest/Application/ViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "loadImage()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "C8286D55-8F47-4909-B1B0-73A429EC5B59 - c89ef991858e8a8b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WalmartTest.ViewModel.loadImage() -&gt; ()"
+                  moduleName = "WalmartTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/basagondmugganavar/Documents/Interview%20/Tests/WalmartTest/WalmartTest/Application/ViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "54"
+                  endingLineNumber = "54"
+                  offsetFromSymbolStart = "116">
+               </Location>
+               <Location
+                  uuid = "C8286D55-8F47-4909-B1B0-73A429EC5B59 - c89ef991858e8a8b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WalmartTest.ViewModel.loadImage() -&gt; ()"
+                  moduleName = "WalmartTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/basagondmugganavar/Documents/Interview%20/Tests/WalmartTest/WalmartTest/Application/ViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "54"
+                  endingLineNumber = "54"
+                  offsetFromSymbolStart = "272">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9747ED63-048F-463D-B011-F9C2D5A5EB45"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WalmartTest/Services/BaseService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "makeRequest(with:type:body:henader:responseType:completionHandler:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "08DEAA86-C398-45BB-AD0C-1065834A5EAD"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WalmartTest/Application/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "91"
+            endingLineNumber = "91"
+            landmarkName = "displayData()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "08DEAA86-C398-45BB-AD0C-1065834A5EAD - 45cb0658b56fed06"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in WalmartTest.ViewController.displayData() -&gt; ()"
+                  moduleName = "WalmartTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/basagondmugganavar/Documents/Interview%20/Tests/WalmartTest/WalmartTest/Application/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "91"
+                  endingLineNumber = "91"
+                  offsetFromSymbolStart = "2352">
+               </Location>
+               <Location
+                  uuid = "08DEAA86-C398-45BB-AD0C-1065834A5EAD - 45cb0658b56fed06"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in WalmartTest.ViewController.displayData() -&gt; ()"
+                  moduleName = "WalmartTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/basagondmugganavar/Documents/Interview%20/Tests/WalmartTest/WalmartTest/Application/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "91"
+                  endingLineNumber = "91"
+                  offsetFromSymbolStart = "2436">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D65BE320-2093-4138-B7C8-DCCC44D35757"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WalmartTest/Application/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "86"
+            endingLineNumber = "86"
+            landmarkName = "displayData()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "D65BE320-2093-4138-B7C8-DCCC44D35757 - 45cb0658b56fecbb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in WalmartTest.ViewController.displayData() -&gt; ()"
+                  moduleName = "WalmartTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/basagondmugganavar/Documents/Interview%20/Tests/WalmartTest/WalmartTest/Application/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "86"
+                  endingLineNumber = "86"
+                  offsetFromSymbolStart = "1400">
+               </Location>
+               <Location
+                  uuid = "D65BE320-2093-4138-B7C8-DCCC44D35757 - 45cb0658b56fecbb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in WalmartTest.ViewController.displayData() -&gt; ()"
+                  moduleName = "WalmartTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/basagondmugganavar/Documents/Interview%20/Tests/WalmartTest/WalmartTest/Application/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "86"
+                  endingLineNumber = "86"
+                  offsetFromSymbolStart = "1628">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
