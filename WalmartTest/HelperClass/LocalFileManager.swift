@@ -6,19 +6,20 @@
 //
 
 import Foundation
+protocol LocalFileManagerProtocol {
+    func readFromFile() -> PlanetaryDomainModel?
+    func deleteTheOldFile()
+    func saveImageToFile(with model:PlanetaryDomainModel)
+}
 
 class LocalFileManager {
-    static var sharedInstance = LocalFileManager()
-    
     private let fileName:String = "myJsonData"
-
     private var path:URL {
         return FileManager.default.urls(for: .documentDirectory,
                                             in: .userDomainMask)[0].appendingPathComponent(fileName)
     }
     
     func saveImageToFile(with model:PlanetaryDomainModel) {
-//        let localImage = LocalImage(date: date, imageData: data)
         let json = convertBodyParams(details: model)
         if let jsonData = try? JSONSerialization.data(withJSONObject: json) {
             do {
@@ -37,8 +38,18 @@ class LocalFileManager {
         }
         return [:]
     }
-    
-    
+
+    func deleteTheOldFile() {
+        do {
+            try FileManager.default.removeItem(at: path)
+        } catch {
+            // Catch any errors
+            print("Unable to delete the file")
+        }
+    }
+}
+
+extension LocalFileManager: LocalFileManagerProtocol {
     func readFromFile() -> PlanetaryDomainModel? {
         do {
             // Get the saved data
@@ -56,13 +67,4 @@ class LocalFileManager {
         return parsedModels
     }
     
-    
-    func deleteTheOldFile() {
-        do {
-            try FileManager.default.removeItem(at: path)
-        } catch {
-            // Catch any errors
-            print("Unable to delete the file")
-        }
-    }
 }

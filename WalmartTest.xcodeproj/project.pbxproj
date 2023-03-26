@@ -21,12 +21,15 @@
 		6BEE162029CF32D400D18659 /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEE161F29CF32D400D18659 /* BaseService.swift */; };
 		6BEE162229CF330100D18659 /* PlanetaryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEE162129CF330100D18659 /* PlanetaryService.swift */; };
 		6BEE162529CF332500D18659 /* LocalFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEE162429CF332500D18659 /* LocalFileManager.swift */; };
-		6BEE162729CF335500D18659 /* LazyImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEE162629CF335500D18659 /* LazyImageView.swift */; };
 		6BEE162929CF337B00D18659 /* PlanetaryDomainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEE162829CF337B00D18659 /* PlanetaryDomainModel.swift */; };
 		6BEE162B29CF33CD00D18659 /* PlanetaryUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEE162A29CF33CD00D18659 /* PlanetaryUseCase.swift */; };
 		6BEE163029CF33FB00D18659 /* PlanetaryDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEE162F29CF33FB00D18659 /* PlanetaryDataModel.swift */; };
 		6BEE163229CF340D00D18659 /* PlanetaryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEE163129CF340D00D18659 /* PlanetaryRepository.swift */; };
 		6BEE163429CF3CED00D18659 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEE163329CF3CED00D18659 /* Reachability.swift */; };
+		6BEE163629CF45B700D18659 /* ViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEE163529CF45B700D18659 /* ViewModelTest.swift */; };
+		6BEE163A29CF4DFF00D18659 /* PlanetaryMockService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEE163929CF4DFF00D18659 /* PlanetaryMockService.swift */; };
+		6BEE163E29CF4EC300D18659 /* PlanetaryStubGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEE163D29CF4EC200D18659 /* PlanetaryStubGenerator.swift */; };
+		6BEE164029D00BBE00D18659 /* MockLocalFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEE163F29D00BBE00D18659 /* MockLocalFileManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,12 +68,15 @@
 		6BEE161F29CF32D400D18659 /* BaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
 		6BEE162129CF330100D18659 /* PlanetaryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetaryService.swift; sourceTree = "<group>"; };
 		6BEE162429CF332500D18659 /* LocalFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFileManager.swift; sourceTree = "<group>"; };
-		6BEE162629CF335500D18659 /* LazyImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyImageView.swift; sourceTree = "<group>"; };
 		6BEE162829CF337B00D18659 /* PlanetaryDomainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetaryDomainModel.swift; sourceTree = "<group>"; };
 		6BEE162A29CF33CD00D18659 /* PlanetaryUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetaryUseCase.swift; sourceTree = "<group>"; };
 		6BEE162F29CF33FB00D18659 /* PlanetaryDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetaryDataModel.swift; sourceTree = "<group>"; };
 		6BEE163129CF340D00D18659 /* PlanetaryRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetaryRepository.swift; sourceTree = "<group>"; };
 		6BEE163329CF3CED00D18659 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		6BEE163529CF45B700D18659 /* ViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelTest.swift; sourceTree = "<group>"; };
+		6BEE163929CF4DFF00D18659 /* PlanetaryMockService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetaryMockService.swift; sourceTree = "<group>"; };
+		6BEE163D29CF4EC200D18659 /* PlanetaryStubGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetaryStubGenerator.swift; sourceTree = "<group>"; };
+		6BEE163F29D00BBE00D18659 /* MockLocalFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockLocalFileManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +146,10 @@
 			isa = PBXGroup;
 			children = (
 				6BEE15FE29CF2ABB00D18659 /* WalmartTestTests.swift */,
+				6BEE163529CF45B700D18659 /* ViewModelTest.swift */,
+				6BEE163929CF4DFF00D18659 /* PlanetaryMockService.swift */,
+				6BEE163F29D00BBE00D18659 /* MockLocalFileManager.swift */,
+				6BEE163D29CF4EC200D18659 /* PlanetaryStubGenerator.swift */,
 			);
 			path = WalmartTestTests;
 			sourceTree = "<group>";
@@ -194,7 +204,6 @@
 			isa = PBXGroup;
 			children = (
 				6BEE162429CF332500D18659 /* LocalFileManager.swift */,
-				6BEE162629CF335500D18659 /* LazyImageView.swift */,
 				6BEE163329CF3CED00D18659 /* Reachability.swift */,
 			);
 			path = HelperClass;
@@ -341,7 +350,6 @@
 				6BEE161E29CF32C200D18659 /* APIClinet.swift in Sources */,
 				6BEE163229CF340D00D18659 /* PlanetaryRepository.swift in Sources */,
 				6BEE162929CF337B00D18659 /* PlanetaryDomainModel.swift in Sources */,
-				6BEE162729CF335500D18659 /* LazyImageView.swift in Sources */,
 				6BEE163029CF33FB00D18659 /* PlanetaryDataModel.swift in Sources */,
 				6BEE15EA29CF2AB900D18659 /* SceneDelegate.swift in Sources */,
 				6BEE162529CF332500D18659 /* LocalFileManager.swift in Sources */,
@@ -352,6 +360,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BEE163E29CF4EC300D18659 /* PlanetaryStubGenerator.swift in Sources */,
+				6BEE164029D00BBE00D18659 /* MockLocalFileManager.swift in Sources */,
+				6BEE163A29CF4DFF00D18659 /* PlanetaryMockService.swift in Sources */,
+				6BEE163629CF45B700D18659 /* ViewModelTest.swift in Sources */,
 				6BEE15FF29CF2ABB00D18659 /* WalmartTestTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

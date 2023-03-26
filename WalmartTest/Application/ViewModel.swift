@@ -17,9 +17,13 @@ class ViewModel {
     private var planetaryUseCase: PlanetaryUseCase
     var dataModel:PlanetaryDomainModel?
     var delegate:ListServiveDelegates!
+    var todayDate:Date?
+    var fileManager:LocalFileManagerProtocol?
     
-    init(with useCase: PlanetaryUseCase) {
+    init(with useCase: PlanetaryUseCase, fileManager:LocalFileManagerProtocol) {
         planetaryUseCase = useCase
+        todayDate = Date()
+        self.fileManager = fileManager
     }
     
     var title:String? {
@@ -43,17 +47,18 @@ class ViewModel {
     }
     
     private var getTodayFormattedDate:String {
-        return  Date().getFormattedDate(format: "yyyy-MM-dd")
+        return  (todayDate ?? Date()).getFormattedDate(format: "yyyy-MM-dd")
     }
     
     func loadImage()  {
-        if let cachedImage = LocalFileManager.sharedInstance.readFromFile(), cachedImage.date == getTodayFormattedDate {
+        if let cachedImage = fileManager?.readFromFile(),
+            cachedImage.date == getTodayFormattedDate {
             debugPrint("image loaded from cache")
             dataModel = cachedImage
             delegate.localImageLoaded(error: nil)
         } else {
             if InternetConnectionManager.isConnectedToNetwork() {
-                LocalFileManager.sharedInstance.deleteTheOldFile()
+                fileManager?.deleteTheOldFile()
                 getImageFromServer()
             } else {
                 delegate.localImageLoaded(error: "We are not connected to the internet, showing you the last image we have.")
@@ -70,6 +75,13 @@ class ViewModel {
             case .failure(let errorString) :
                 self?.delegate.errorAccored(error: errorString)
             }
+        }
+    }
+    
+    func saveImageToLocal() {
+        if let data = dataModel,
+            data.localData != nil {
+            fileManager?.saveImageToFile(with: data)
         }
     }
 }

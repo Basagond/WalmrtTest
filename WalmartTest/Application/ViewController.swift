@@ -12,7 +12,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var explanation: UITextView!
     @IBOutlet weak var titleLable: UILabel!
     @IBOutlet weak var errorLabel: UILabel!
-    @IBOutlet weak var imageView: LazyImageView!
+    @IBOutlet weak var imageView: UIImageView!
     var alertVC: UIAlertController!
 
     var viewModel:ViewModel!
@@ -29,7 +29,7 @@ class ViewController: UIViewController {
     }
 
     private func initialSetUp() {
-        viewModel = ViewModel(with: PlanetaryRepository(with: PlanetaryService()))
+        viewModel = ViewModel(with: PlanetaryRepository(with: PlanetaryService()), fileManager: LocalFileManager())
         viewModel.delegate = self
     }
 
@@ -80,18 +80,31 @@ extension ViewController: ListServiveDelegates {
     
     private func displayData() {
         DispatchQueue.main.async {
-            self.titleLable.text = self.viewModel.title
-            self.explanation.text = self.viewModel.explanation
-            if let model = self.viewModel.dataModel {
-                self.imageView?.loadImage(from: model) {
-                    self.removeLoader()
+        self.titleLable.text = self.viewModel.title
+        self.explanation.text = self.viewModel.explanation
+        
+        if let model = self.viewModel.dataModel,
+            let url = URL(string: model.url),
+            let imageData = try? Data(contentsOf: url) {
+            model.localData = imageData
+            self.viewModel.saveImageToLocal()
+            if let image = UIImage(data: imageData) {
+                    debugPrint("image downloaded from server...")
+                    self.imageView.image = image
                 }
-            }
+        } else {
+            self.errorLabel.isHidden = false
+            self.errorLabel.text = "Image not available"
+        }
+        self.removeLoader()
         }
     }
     
     func errorAccored(error: String) {
-        removeLoader()
-        print(error)
+        DispatchQueue.main.async {
+            self.errorLabel.isHidden = false
+            self.errorLabel.text = error
+            self.removeLoader()
+        }
     }
 }

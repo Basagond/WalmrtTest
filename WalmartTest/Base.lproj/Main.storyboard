@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LXk-nA-TDQ" customClass="LazyImageView" customModule="WalmartTest" customModuleProvider="target">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LXk-nA-TDQ">
                                 <rect key="frame" x="16" y="357" width="361" height="361"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="LXk-nA-TDQ" secondAttribute="height" id="Ujx-ud-L4B"/>
@@ -65,7 +65,7 @@
                     <connections>
                         <outlet property="errorLabel" destination="eO4-KO-1p1" id="Dsj-2b-2Yp"/>
                         <outlet property="explanation" destination="Puq-u7-wMH" id="fh9-8p-sUw"/>
-                        <outlet property="imageView" destination="LXk-nA-TDQ" id="E5Q-aZ-yX5"/>
+                        <outlet property="imageView" destination="LXk-nA-TDQ" id="ZsL-9v-1FE"/>
                         <outlet property="titleLable" destination="alB-aq-Jkb" id="Iq6-rr-G1U"/>
                     </connections>
                 </viewController>

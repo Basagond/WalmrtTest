@@ -7,10 +7,10 @@
 
 import Foundation
 class PlanetaryDataModel: Codable {
-    let copyright, date, explanation: String
-    let hdurl: String
-    let mediaType, serviceVersion, title: String
-    let url: String
+    let copyright, date, explanation: String?
+    let hdurl: String?
+    let mediaType, serviceVersion, title: String?
+    let url: String?
 
     enum CodingKeys: String, CodingKey {
         case copyright, date, explanation, hdurl
