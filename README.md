@@ -37,7 +37,7 @@ If a module has multiple use cases then there will be a **Usecase** file else th
 - ```Mocking (Faking objects)``` Each Module’s data source either **Repository** class or **UseCase** class to which **ViewModel** interacts directly to get data, is mocked using swift protocol to provide data for both success and failure.
 - ```Test Cases``` Test case class is written for **ViewModel** class considering  all the possible scenarios, which includes Asserts and other Xcode’s  Apis.
 
-##Improvements 
-- Still unit testing can be done in better way 
-- Service giving video link as well, video player is not added to play the video 
-- Refreshing feature can be added when we have error or no network connection 
+## Improvements 
+- Still ```unit testing``` can be done in better way 
+- Service giving ```video link``` as well, video player is not added to play the video 
+- ```Refreshing feature``` can be added when we have error or no network connection 
